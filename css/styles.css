@@ -134,8 +134,11 @@ body {
         display: block;
     }
     @media screen and (max-width:660px) {
-        .container {
-            height: 28rem;
+        .container {}
+        .divider {
+            position: static;
+            width: 100%;
+            margin-bottom: 2rem;
         }
     }
 }
