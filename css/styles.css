@@ -28,7 +28,8 @@ body {
 
 .container {
     background-color: hsl(217, 19%, 24%);
-    max-width: 29.875rem;
+    width: 26.875rem;
+    min-height: 15rem;
     text-align: center;
     position: relative;
     padding: 2.5rem;
@@ -52,8 +53,10 @@ body {
 }
 
 .divider {
-    width: 100%;
-    margin-bottom: 1rem;
+    width: 90%;
+    left: 5%;
+    bottom: 4rem;
+    position: absolute;
 }
 
 .mob {
@@ -118,11 +121,21 @@ body {
     }
     .container {
         margin-top: -2rem;
+        padding: 1.4rem;
+    }
+    .title {
+        margin-top: 1.6rem;
+        margin-bottom: 2rem;
     }
     .desk {
         display: none;
     }
     .mob {
         display: block;
+    }
+    @media screen and (max-width:660px) {
+        .container {
+            height: 27rem;
+        }
     }
 }
