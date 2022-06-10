@@ -1,0 +1,128 @@
+@charset "UTF-8";
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'Manrope', sans-serif;
+}
+
+body {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+/* MAIN SECTION */
+
+.main {
+    font-size: 1.75rem;
+    background-color: hsl(218, 23%, 16%);
+    min-height: 70vh;
+    min-width: 60vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    background-color: hsl(217, 19%, 24%);
+    max-width: 29.875rem;
+    text-align: center;
+    position: relative;
+    padding: 2.5rem;
+    border-radius: 1rem;
+    margin: 1rem;
+    margin-bottom: 2rem;
+}
+
+.title {
+    margin-top: 0.5rem;
+    margin-bottom: 1.6rem;
+    color: hsl(150, 100%, 66%);
+    font-size: 1rem;
+    letter-spacing: 0.3rem;
+}
+
+.advice {
+    color: hsl(193, 38%, 86%);
+    margin-bottom: 1.7rem;
+    letter-spacing: 0.2rem;
+}
+
+.divider {
+    width: 100%;
+    margin-bottom: 1rem;
+}
+
+.mob {
+    display: none;
+}
+
+.cont_dice {
+    position: absolute;
+    bottom: -1.85rem;
+    left: -webkit-calc(50% - 1.85rem);
+    left: -o-calc(50% - 1.85rem);
+    left: -moz-calc(50% - 1.85rem);
+    left: calc(50% - 1.85rem);
+    border-radius: 100%;
+    width: 1.7rem;
+    height: 1.7rem;
+    padding: 1rem;
+    background-color: hsl(150, 100%, 66%);
+    transition: 0.3s;
+    cursor: pointer;
+    background: hsl(150, 100%, 66%) url(../images/icon-dice.svg) 50% no-repeat;
+    background-size: 40%;
+}
+
+.cont_dice:hover {
+    transition: 0.3s;
+    box-shadow: 0px 0px 30px 0 hsla(150, 100%, 66%, 0.827);
+}
+
+.scale {
+    transform: scale(0.9);
+    background-color: hsl(150, 78%, 61%);
+    transition: 0.3s;
+    box-shadow: 0 0 30px 0 hsl(150, 100%, 66%);
+}
+
+
+/* FOOTER SECTION */
+
+.attribution {
+    font-size: 0.7rem;
+    text-align: center;
+    margin-top: 2rem;
+}
+
+.attribution a {
+    font-size: 0.8rem;
+    color: hsl(228, 45%, 44%);
+}
+
+@media screen and (max-width:1080px) {
+    .main {
+        min-height: 70vh;
+        min-width: 90vw;
+    }
+}
+
+@media screen and (max-width:791px) {
+    .main {
+        width: 100vw;
+        min-height: 90vh;
+    }
+    .container {
+        margin-top: -2rem;
+    }
+    .desk {
+        display: none;
+    }
+    .mob {
+        display: block;
+    }
+}
